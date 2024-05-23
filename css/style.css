@@ -1,0 +1,132 @@
+@import "hue.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    height: 30vh;
+    justify-content: space-between;
+}
+
+.placeholder {
+    height: 30vh;
+}
+
+header h1 {
+    flex: 3;
+    /*font-size: 2em;*/
+    margin-left: 1vw;
+    font-weight:1000;
+    font-size:4vw;
+    line-height:4vw;
+    letter-spacing:.1vw;
+
+    /*color: #FFF;*/
+    text-align: center;
+    font-family: "Comic Sans MS";
+    background: -webkit-linear-gradient( #EEF2F5, #eae0c8, #EEF2F5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header img:nth-child(2) {
+    flex: 7;
+}
+
+/*header img:nth-child(3) {*/
+/*    flex: 3;*/
+/*}*/
+
+header img {
+    float: right;
+    height: 30vh;
+}
+
+br {
+    height: 1px;
+}
+
+hr {
+    border: 0;
+    height: 3px;
+    /*margin-left: 20vw;*/
+    /*margin-right: 20vw;*/
+    background: #333;
+    background-image: linear-gradient(to right, #B2B7BD, #DEE0E3, #B2B7BD);
+}
+
+nav {
+    margin-left: 30vw;
+    margin-right: 30vw;
+    /*color: white;*/
+    height: 2vh;
+    font-size: 1vw;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+nav li a {
+    background: -webkit-linear-gradient(#C5C8CD, #B2B7BD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #1C1C1C;
+    transition: all 0.5s ease;
+}
+
+main {
+    font-weight:100;
+    font-size:1vw;
+    font-family: Verdana;
+    line-height:1vw;
+    letter-spacing:0.05vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.introduce_main p {
+    font-family: 楷体;
+    font-weight:100;
+    font-size:0.8vw;
+    /*text-transform: none;*/
+    /*font-family: Verdana;*/
+    line-height:1vw;
+    letter-spacing:0.05vw;
+
+}
+
+.introduce_main .aboutme{
+    margin-left: 0.1vw;
+    margin-top: 0.1vw;
+    font-family: "Comic Sans MS";
+    font-weight:100;
+    font-size:1.2vw;
+    line-height:1vw;
+    letter-spacing:0.05vw;
+    background: -webkit-linear-gradient( #EEF2F5, #eae0c8, #EEF2F5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.introduce{
+    font-family: Lato;
+    font-weight:100;
+    font-size:0.8vw;
+    /*text-transform: none;*/
+    /*font-family: Verdana;*/
+    line-height:1vw;
+    letter-spacing:0.05vw;
+
+}
