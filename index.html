@@ -1,7 +1,91 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
+<html lang="zh">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Shaoli Huang</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}?v={{timestamp}}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/cl_effect.css') }}?v={{timestamp}}"/>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="Shortcut Icon" href="{{ url_for('static', filename='406769_camera_icon.png') }}" type="image/x-icon">
+</head>
+
+<body class="fullMoon">
+    <div id="home">
+        <header class="nightSmoothie">
+            <h1> Lalala&d<br>Studio</h1>
+            <img src="static/short.png" alt="Garden's image">
+<!--            <img src="static/main.png" alt="Garden's image">-->
+        </header>
+        <div class="placeholder"></div>
+        <hr>
+        <nav class="cl-effect-1">
+            <li><a href="/">HOME</a></li>
+            <li><a href="canddle">Canddle</a></li>
+            <li><a href="portroit">Portroit</a></li>
+            <li><a href="landsccape">Landsccape</a></li>
+            <li><a href="Others">Others</a></li>
+        </nav>
+        <hr>
+    </div>
+
+    <div style="text-align: center">
+        <main>
+            {% if type == 'main' %}
+            <img src="static/wps_doc_56.jpg" alt="img" width="75%">
+<!--            <img src="static/wps_doc_2.png" alt="img" width="75%">-->
+            {% else  %}
+                {% for image in images %}
+                    <img src="{{ image }}" alt="img" width="32%" height="32%">
+                    {% if loop.index % 3 == 0 %}
+                    <br>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+
+            <br>
+<!--            <p> 正文 </p>-->
+<!--            <p> 正文 </p>-->
+<!--            <p> 正文 </p>-->
+<!--            <p> 正文 </p>-->
+<!--            <p> 正文 </p>-->
+<!--            <p> 正文 </p>-->
+<!--            <p> 正文 </p>-->
+<!--            <p> 正文 </p>-->
+<!--            <p> 正文 </p>-->
+<!--            <p> 正文 </p>-->
+<!--            <p> 正文 </p>-->
+<!--            <p> 正文 </p>-->
+<!--            <p> 正文 </p>-->
+<!--            <p> 正文 </p>-->
+        </main>
+    </div>
+
+    <div>
+        <hr>
+        <main class="introduce_main">
+            <p class="aboutme"> ABOUT ME </p>
+            <br>
+            <p> - Windy 黄少丽, 青年摄影师，现居山东青岛，现任TAG西海美术馆驻馆摄影师。</p>
+            <p> - 成果刊登于《芭莎艺术》《时代建筑》《中国艺术报》 《中国文化报》《中国美术报》《卷宗Wallpaper》《时尚cosmo》 《Hi艺术》《一条》《artnow by Nobless》谷德设计网等艺术、建筑专业媒体平台</p>
+            <p> - 统筹美术馆视觉宣传相关的影像工作（建筑影像、艺术展览宣传、场馆活动等）</p>
+            <p> - 组织团队进行以此为核心全流程内容生产</p>
+            <p> - 对接多渠道内容合作平台：包括线上艺术类自媒体，电视台、电台广播、省文旅集团等以达到美术馆全方面的传播效果</p>
+        </main>
+    </div>
+
+    <footer>
+        <hr>
+        <main class="introduce_main">
+            <p class="aboutme"> Contect Me </p>
+            <br>
+            <p> <i class="fa fa-phone" style="font-size:1.8vw;color:darkred"></i> 18765859083</p>
+            <br>
+            <p> <i class="fa fa-envelope" style="font-size:1.8vw;color:dodgerblue"></i> 1241551935@qq.com</p>
+            <br>
+            <p> <i class="fa fa-wechat" style="font-size:1.8vw;color:green"></i> Heyspoon</p>
+
+        </main>
+    </footer>
 </body>
 </html>
